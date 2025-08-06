@@ -51,11 +51,11 @@ console.log("Uma estranha flux de mana começa a surgir, e um portal se abre, um
 // Estado atual da história
 let localAtual = "Porto de Baltimore";
 let missaoAtual = "Invasão do Reino dos Elfos";
-
 console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
 
 console.log("Capítulo 1: Renascimento");
 console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
+
 console.log(`${nome} convoca seu exército para as frontes de batalha no ${localAtual}, onde ele irá discursar seu plano de ataque contra Legolas Aragorn.`);
 console.log(`Para seu plano, ${nome} precisará de um especialista em alquimia para criar poções de encantamento e veneno, de preferência do mesmo nível de habilidade do assassino que o atacou.`);
 console.log(`${nome} então vai até um velho amigo, um alquimista chamado Walter, que vive no subúrbio do Reino dos Elfos, na região de Whiterun. Walter cobrará 1000 moedas de ouro para ajudar ${nome} com a quantidade necessária para o plano`);
@@ -68,7 +68,32 @@ if (nivel >= 95) {
     console.log(`${nome} e sua Guarda Real prosseguem a viagem para o Reino dos Elfos Negros com o veneno e o encantamento para o plano`);
 }
 console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
-console.log(`${nome} caminha em direção ao Norte, onde se encontra o Reino dos Elfos Negros, originário de Legolas Aragorn. Ele e seus fiéis cavalheiros já estão a 2 dias camihando e resolvem parar por alguns dias para se recompor`);
+console.log(`${nome} caminha em direção ao Norte, onde se encontra o Reino dos Elfos Negros, originário de Legolas Aragorn. Ele e seus fiéis cavalheiros já estão a 2 dias caminhando e resolvem parar por alguns dias para se recompor`);
 if (stamina <= 150){
     console.log(`${nome} e seus cavaleiros vão parar para repousar`);
+} 
+console.log("Fim do Capítulo 1");
+console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
+
+console.log("Capítulo 2: A Queda");
+console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
+console.log(`${nome} e seus cavaleiros atravessam a Floresta dos Susurros, ela é chamada assim, porque os ventos levam mensagens dos deuses antigos da Era de Gelo e Sombras, que ora terminou com a chegada dos Stormcloaks e seus dragões, estes são ancestrais de ${nome}, o que torna herdeiro do trono. Legolas tirou os Stormcloaks do poder na Batalha de Riverwood há 25 anos, assassinando o Rei Louco, tio de ${nome}, e eliminando todos os herdeiros de sangue do trono, mas Legolas não sabia que o pequeno ${nome} Stormcloak conseguiu fugir com apenas 6 anos de idade, foi resgatado pelos J'ahares, assassinos treinados que o treinaram e ensinaram tudo o que sabem sobre magia e assasinato, sempre silencioso e mortal.`);
+console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
+console.log(`Enquanto ${nome} atravessa a floresta com seus cavaleiros, ele é parado por três bandidos, que o reconhecem e diz que Legolas Aragorn está oferencendo uma grande recompensa para quem trazer a cabeça de ${nome}, que oferece um acordo aos bandidos, se deixarem ele e seus cavaleiros passarem, ele dará 10000 moedas de ouro para cada um deles.`);
+if (ouro >= 30000) {
+    console.log("Os bandidos aceitam o acordo e deixam eles passarem em segurança e fornecem a informação de que Legolas está em acampando em uma pequena fortaleza ao Nordeste de onde eles estão, chamada de Forte Helgerd.");
+} else { 
+    console.log(`Os bandidos atacam ${nome} e seus cavaleiros com dardos sonolentos, derrubando todos no chão de uma só vez, capturando-os e levando-os até Legolas, para que ele mesmo possa decapitar ${nome}.`);
+} 
+console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
+console.log(`${nome} e seus cavaleiros já próximos do Forte Helgerd sentam para discutir o plano de ataque, ${nome} diz que eles devem se infiltrar no forte disfarçados de guardas, e eliminar silenciosamente os guardas ao redor do forte, porém os cavaleiros temem que não possuem habilidade o suficiente para entrarem sem ser detectados, ${nome} então diz que irá seguir com o plano B, ele entrega o veneno e os encantamentos para os cavaleiros e pede para eles o encontrar ao Norte, no Reino dos Elfos Negros, enquanto ele vai entrar em Helgerd, mas antes precisa checar se tem habilidade para se infiltrar no forte sozinho.`);
+if (classe === "Assassino"){
+    console.log(`${nome} consegue se infiltrar sozinho no Forte Helgerd e eliminar os guardas que guardam as portas dos fundos do Forte.`);
+} else {
+    console.log(`${nome} não consegue e procede com os cavaleiros para o castelo de Aragorn e aguardam a chegada dele e seus cavaleiros`);
 }
+console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
+console.log(`Dentro do Forte, ${nome} entra disfarçado com os trajes dos guardas que ele derrotou. Ele encontra Legolas Aragorn conversando com alguém familiar... Era Puck! Seu amigo, conselheiro e o regente que está em seu lugar enquanto esteve fora. ${nome} não pode acreditar no que viu, então foi se aproximando dos dois, com a adaga empunhada, mas de repente os dois desaparecem, evaporaram e não deixaram rastros, ${nome} congela e fica imóvel... LEGOLAS ARAGORN REAPARECE E O ATACA COM DARDOS SONOLENTOS, ${nome} consegue desviar e atacar Legolas com seu Arco Conjurado, mas ele consegue se esquivar também e desaparece novamente... ${nome} então percebe que Puck não estava do lado de Legolas, mas sim era apenas uma ilusão criada por ele, ${nome} então corre para a porta de saída do Forte para enviar uma carta para Puck e Titânia, mas é interceptado por um dos guardas que o golpeou e o derrubou no chão, Legolas então reaparece e diz: 'Você é um tolo, caiu na emboscada mais idiota que já vi, parece que não aprendeu nada com os J'ahares, mas não se preocupe, não irei te matar, venha comigo para um jantar em meu castelo e poderemos conversar e negociar melhor.'`)
+console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
+
+console.log("Fim do Capítulo 2");
