@@ -7,6 +7,8 @@ let vida = 1000;
 let ouro = 65393;
 let xp = 15000;
 let stamina = 100;
+let agilidade = 440;
+let escudo = 350;
 
 //Itens e status
 const NOME_ARMA= "Arco Conjurado";
@@ -15,7 +17,6 @@ const DANO_BASE= "300";
 const DANO_CRITICO= "300";
 const NOME_ARMADURA= "Armadura do Elfo Negro Encantado";
 const DEFESA_BASE= "500";
-const AGILIDADE = "440";
 ataqueTotal = nivel + DANO_BASE;
 defesaTotal = DEFESA_BASE + (nivel/2);
 
@@ -167,7 +168,7 @@ console.log(`${nome} se afasta da mesa empunhando sua ${NOME_ARMA_NOVA} e grita:
 console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
 if (stamina >= 110) {
     console.log(`${nome} ataca Legolas, com uma tática deseperada e força bruta!`);
-} else if (AGILIDADE >= 450) {
+} else if (agilidade >= 600){
     console.log(`${nome} se esgueira mais rápido, antes mesmo que Legolas possa desviar e empunha-lá em seu coração!`);
 } else {
     console.log(`${nome} se joga em cima de Legolas, mas deixa ${NOME_ARMA_NOVA} cair, restando apenas seus punhos, já que não trouxera seu ${NOME_ARMA}.`)
@@ -187,11 +188,27 @@ console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
 
 console.log(`${nome} concebe a Legolas um Perdão Real e diz que se ele se juntar para derrotar Puck, será recompensado. Legolas aceita e convoca seu Atronach de fogo para ajudá-los durante a jornada. Antes de partirem, Legolas leva ${nome} para a Sala do Tesouro para novos upgrades de armas e poções.`);
 
-let aliados = ["Legolas Aragorn", "Atronach de fogo"];
+console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
+
+let aliados = ["Legolas Aragorn", "Atronach de Fogo"];
+
+for (let i = 0; i < aliados.length; i++) {
+    let aliado = aliados[i];
+    console.log("Aliado " + (i + 1) + ": " + aliado + " se junta à missão!");
+if (i === 0) {
+    console.log("Como estrategista, " + aliado + " coordena os ataques e os prevê, tem poder mágico elevado e a fúria dos deuses elfícos");
+    agilidade += 200;
+} else {
+    console.log("Como defensor, " + aliado + " defende toda equipe com seus golpes de chamas e e paredes de chama que bloqueia os ataques");
+   escudo += 350;
+}
+}
 
 console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
 
-console.log("Capítulo 4: Deus e o Diabo na Terra do Sol");
+console.log("Capítulo 4: A Vingança da Fênix");
+
+console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
 
 console.log(`${nome} troca sua Adaga Venenosa Encantada pela Espada das Sombras, conhecida por muitos como a Arma do Diabo, essa espada é capaz de roubar as almas dos inimigos, acender as chamas azul do Inferno de Hades e abrir portais dimensionais.`);
 
@@ -209,8 +226,46 @@ let tesouroColetado = [];
 console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
 
 console.log(`Eles partem em direção ao sul, de volta para o Castelo de ${nome}, no qual Puck está reinando agora e inícia seu Reinado das Sombras em todo o Reino dos Elfos`);
+console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
 
 console.log("Fim do Capítulo 4");
+
+console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
+
+console.log("Capítulo 5: Deus e o Diabo na Terra do Sol");
+
+console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
+
+console.log(`Depois de dias caminhando, eles chegaram ao Reino e encontraram a cidade destruída, civis e cavaleiros mortos, uma guerra ocorreu ali. O céu estava escuro, coberto com a Nuvem de Trevas, uma magia proibida que só pode ser utilizada por almas condenadas.`);
+
+console.log(`${nome}, Legolas e seu Atronach, entraram no castelo, suas paredes estavam cobertas com raízes da Yggdrasil, mas corrompida pelas trevas.`);
+
+let salasCastelo = ["Hall Principal", "Sala do Trono", "Biblioteca dos Elfos"];
+
+console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
+
+for (let i = 0; i < salasCastelo.length; i++) {
+    console.log("Biblioteca dos Elfos " + (i + 1) + ": " + salasCastelo[i]);
+
+    if (i === 0) {
+        console.log(nome + " Encontra um Cristal do Caos");
+        stamina += 100;
+    } else if (i === 1) {
+        console.log(nome + " Encontra o colar de sua filha Rhaenyra");
+        tesouroColetado.push("Colar de Rhaenyra");
+    } else {
+        console.log(`${nome} tropeça nas raízes das trevas`);
+        vida -= 70;
+    }
+}
+
+console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
+
+console.log("Depois de explorar o castelo, os três subiram até o topo do castelo, de onde vinha as Nuvens de Trevas.");
+
+console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
+
+console.log("Fim do Capítulo 5");
 
 console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
 
