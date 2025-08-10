@@ -179,3 +179,38 @@ console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
 console.log("Fim do Capítulo 3...?");
 
 console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
+
+let inventarioAtual = ["Arco Conjurado", "Armadura do Elfo Negro Encantado", "Adaga Venenosa Encantada"];
+console.log("Epílogo");
+
+console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
+
+console.log(`${nome} concebe a Legolas um Perdão Real e diz que se ele se juntar para derrotar Puck, será recompensado. Legolas aceita e convoca seu Atronach de fogo para ajudá-los durante a jornada. Antes de partirem, Legolas leva ${nome} para a Sala do Tesouro para novos upgrades de armas e poções.`);
+
+let aliados = ["Legolas Aragorn", "Atronach de fogo"];
+
+console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
+
+console.log("Capítulo 4: Deus e o Diabo na Terra do Sol");
+
+console.log(`${nome} troca sua Adaga Venenosa Encantada pela Espada das Sombras, conhecida por muitos como a Arma do Diabo, essa espada é capaz de roubar as almas dos inimigos, acender as chamas azul do Inferno de Hades e abrir portais dimensionais.`);
+
+let itemRemovido = inventarioAtual.pop();
+inventarioAtual.push("Espada das Sombras");
+
+console.log(`${nome} então ficou com: ${inventarioAtual}`);
+
+console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
+
+console.log(`${nome} também recolheu alguns tesouros do báu: moedas de prata, jóias e barras de ouro`);
+
+let tesouroColetado = [];
+
+console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
+
+console.log(`Eles partem em direção ao sul, de volta para o Castelo de ${nome}, no qual Puck está reinando agora e inícia seu Reinado das Sombras em todo o Reino dos Elfos`);
+
+console.log("Fim do Capítulo 4");
+
+console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
+
