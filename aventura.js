@@ -269,3 +269,19 @@ console.log("Fim do Capítulo 5");
 
 console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
 
+console.log("Capítulo 6: Por Todo o Reino");
+
+console.log("⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖");
+
+console.log(`${nome}, Legolas e seu Atronach de Fogo sobem até o topo do castelo e entram em uma sala escura, com apenas um foco de luz em uma cadeira vazia. Nossos heróis ficaram em alerta e em volta da cadeira.`);
+
+console.log(`De repente as luzes se acendem e revelam a sala para nossos heróis. Amarradas a um pilar, com suas bocas seladas estava Titânia e Rhaenyra, esposa e a filha de ${nome}. 'PUCK, SEU TRAIDOR, VOCÊ VAI PAGAR PELO QUE FEZ COM O REINO E MINHA FAMÍLIA.  SOLTE-AS AGORA! APAREÇA AGORA, SEJA HOMEM, SEJA NOBRE, LUTE! VOCÊ ESTEVE POR DE BAIXO DO MEU NARIZ TODOS ESSES ANOS, ESCONDEU SUA VERDADEIRA IDENTIDADE E TRAMOU CONTRA MIM, SEU REI! SEU AMIGO! SEU PRÓPRIO SANGUE! - disse ${nome}.`);
+
+console.log(`Puck surge das cinzas e diz: 'Todos esses anos eu estive aqui nesse reino, perto deste trono, deste castelo, deste povo, do que é meu por direito. Não vê? ELES TIRARAM TUDO DA GENTE, NOS TRATARAM COMO RATOS! ESTE HOMEM QUE ESTÁ DO SEU LADO MASSACROU TODA NOSSA FAMÍLIA, TIROU NOSSO TRONO, NOS EXÍLOU DESTE REINO E VOCÊ AINDA TEM CORAGEM DE VOLTAR AQUI COM ELE? DEPOIS DE TUDO QUE ELE FEZ A NÓS! VOCÊ É O TRAIDOR DO REINO, TRAIDOR DO POVO! EU NÃO QUERIA TER MANDADO VOCÊ, SABIA QUE VOCÊ RETORNARIA, MAS ERA A MINHA ÚNICA ESCOLHA! AQUELE ASSASSINO INCOMPETENTE NÃO CONSEGUIU PERFURAR VOCÊ, DEVERIA TER FEITO ISSO MUITO ANTES, VOCÊ NUNCA FOI DIGNO DO TRONO, EU SOU! AGORA VOU ACABAR COM VOCÊ AQUI E AGORA!`);
+
+console.log('Puck invoca 2 fantasmas das sombras e parte para o ataque.');
+
+let inimigosBatalha = ["Fantasma das Sombras 1", "Fantasma das Sombras 2", "Puck"];
+let danoRecebido = [];
+
+console.log(nome + " enfrenta " + inimigosBatalha.length);
